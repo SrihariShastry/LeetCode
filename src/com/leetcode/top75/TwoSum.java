@@ -9,7 +9,7 @@ public class TwoSum {
         int target =1;
         int[] res;
         res = twoSum(nums,target);
-        System.out.println("[" +res[0]+ " , "+ res[1]+"]");
+        System.out.println("[" +res[0]+ ","+ res[1]+"]");
     }
     private static int[] twoSum(int[] nums,int target){
         HashMap<Integer,Integer> map = new HashMap<>();
