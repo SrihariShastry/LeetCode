@@ -9,7 +9,7 @@ public class CoinChange {
             Arrays.fill(dp,amount+1);
             dp[0]=0;
             // Arrays.sort(coins);
-            for(int i=0;i<=amount;i++){
+            for(int i=1;i<=amount;i++){
                 for(int j=0;j<coins.length;j++){
                     if(coins[j]<=i)
                         dp[i]=Math.min(dp[i],1+dp[i-coins[j]]);
