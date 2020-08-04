@@ -3,7 +3,7 @@ package com.leetcode.top75;
 import java.util.*;
 
 public class CourseSchedule {
-    class Solution {
+    static class Solution {
         public boolean canFinish(int numCourses, int[][] prerequisites) {
             HashMap<Integer,ArrayList<Integer>> dep = new HashMap<>();
             int[] indeg = new int[numCourses];
