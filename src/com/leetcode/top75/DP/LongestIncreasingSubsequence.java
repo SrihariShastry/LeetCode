@@ -1,4 +1,4 @@
-package com.leetcode.top75;
+package com.leetcode.top75.DP;
 
 public class LongestIncreasingSubsequence {
     class Solution {

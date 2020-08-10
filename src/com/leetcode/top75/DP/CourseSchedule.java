@@ -1,4 +1,4 @@
-package com.leetcode.top75;
+package com.leetcode.top75.DP;
 
 import java.util.*;
 

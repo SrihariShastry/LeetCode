@@ -1,4 +1,4 @@
-package com.leetcode.top75;
+package com.leetcode.top75.Arrays;
 
 public class buySellStock {
     public static void main(String[] args){
