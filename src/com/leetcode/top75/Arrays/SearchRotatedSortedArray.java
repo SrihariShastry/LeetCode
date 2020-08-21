@@ -13,12 +13,14 @@ public class SearchRotatedSortedArray {
                     return mid;
                 //find if left half is sorted
                 if(nums[mid]>=nums[start]){
+                    //Left half is sorted but is the element in left half?
                     if(target>=nums[start]&&target<=nums[mid])
                         end=mid-1;
                     else
                         start=mid+1;
                 }
                 else{
+                    //Right half is sorted but is the target in the right half?
                     if(target<=nums[end]&&target>nums[mid])
                         start=mid+1;
                     else
