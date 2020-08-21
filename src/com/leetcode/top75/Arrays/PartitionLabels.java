@@ -23,7 +23,6 @@ public class PartitionLabels {
                 if(i==max){
                     res.add(i-prevPartition+1);
                     prevPartition=i+1;
-                    continue;
                 }
 
             }
