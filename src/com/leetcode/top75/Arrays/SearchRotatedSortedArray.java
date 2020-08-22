@@ -3,7 +3,7 @@ package com.leetcode.top75.Arrays;
 public class SearchRotatedSortedArray {
     class Solution {
         public int search(int[] nums, int target) {
-            return binarySearch(nums,0,nums.length,target);
+            return binarySearch(nums,0,nums.length-1,target);
         }
         private int binarySearch(int[] nums, int start, int end, int target){
             while(start<=end){
