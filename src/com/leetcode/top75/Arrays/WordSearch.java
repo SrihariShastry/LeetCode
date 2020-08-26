@@ -33,7 +33,6 @@ public class WordSearch {
                 //Back Tracking
                 board[i][j]=a;
                 return false;
-
             }
         }
     }
