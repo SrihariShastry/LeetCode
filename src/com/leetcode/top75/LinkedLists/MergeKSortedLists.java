@@ -1,4 +1,4 @@
-package com.leetcode.top75.Arrays;
+package com.leetcode.top75.LinkedLists;
 
 // * Definition for singly-linked list.
 class ListNode {

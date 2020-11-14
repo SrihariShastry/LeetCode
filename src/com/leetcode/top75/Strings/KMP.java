@@ -1,4 +1,4 @@
-package com.leetcode.top75.Arrays;
+package com.leetcode.top75.Strings;
 
 public class KMP {
 
