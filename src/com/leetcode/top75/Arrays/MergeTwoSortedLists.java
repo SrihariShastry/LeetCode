@@ -1,4 +1,4 @@
-package com.leetcode.top75.LinkedLists;
+package com.leetcode.top75.Arrays;
 
 public class MergeTwoSortedLists {
     class Solution {
