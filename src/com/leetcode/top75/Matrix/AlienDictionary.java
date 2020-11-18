@@ -1,4 +1,4 @@
-package com.leetcode.top75.Graphs;
+package com.leetcode.top75.Matrix;
 
 import java.util.*;
 
