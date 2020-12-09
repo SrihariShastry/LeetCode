@@ -14,12 +14,22 @@ public class NumIslandsII {
     int[] parent;
     int[] rank;
 
-    //this is a union find problem
+    /**
+     * this is a union find problem
+     *
+     * @param m         Number of rows
+     * @param n         Number of Columns
+     * @param positions Events
+     * @return List containing Number of Islands after every event
+     */
     public List<Integer> numIslands2(int m, int n, int[][] positions) {
         grid = new int[m][n];           // to keep track of updates
         parent = new int[m * n];          // to keep track of who is whose parent
         rank = new int[m * n];            // to keep track of number of children each node has
         int count = 0;                   // number of islands
+        List<Integer> res = new ArrayList<>();
+        int[] dx = {0, 0, 1, -1};
+        int[] dy = {1, -1, 0, 0};
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 int tmp = i * n + j;
@@ -27,9 +37,6 @@ public class NumIslandsII {
                 rank[tmp] = 1;
             }
         }
-        int[] dx = {0, 0, 1, -1};
-        int[] dy = {1, -1, 0, 0};
-        List<Integer> res = new ArrayList<>();
         for (int[] position : positions) {
             int x = position[0];
             int y = position[1];
