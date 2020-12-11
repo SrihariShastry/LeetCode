@@ -12,7 +12,7 @@ public class LetterCasePermutation {
 
         }
         public void dfs(char[] ch,int pos, List<String> res){
-            if(pos>=ch.length){
+            if (pos >= ch.length) {
                 res.add(new String(ch));
                 return;
             }
