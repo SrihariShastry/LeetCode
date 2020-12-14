@@ -1,5 +1,14 @@
 package com.leetcode.Uber;
 
+/**
+ * Steps:
+ * 1. We get the count of each character in the string
+ * 2. we find the max count and the letter which repeats max times
+ * 3. We check if the max amount is greater than half of the string. If yes, return empty string
+ * 4. We first need to place the most repeated character first. we place it on even indexes
+ * 5. We then place all the other Characters on odd indexes.
+ * 6. If at any stage, we find that the index has gone out of bounds we just initialize it to 1;
+ */
 public class ReorganizeLetters {
 
     public String reorganizeString(String s) {
