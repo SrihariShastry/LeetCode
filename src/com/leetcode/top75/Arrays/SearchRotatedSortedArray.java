@@ -21,10 +21,10 @@ public class SearchRotatedSortedArray {
                 }
                 else{
                     //Right half is sorted but is the target in the right half?
-                    if(target<=nums[end]&&target>nums[mid])
-                        start=mid+1;
+                    if (target <= nums[end] && target >= nums[mid])
+                        start = mid + 1;
                     else
-                        end=mid-1;
+                        end = mid - 1;
                 }
             }
             return -1;
