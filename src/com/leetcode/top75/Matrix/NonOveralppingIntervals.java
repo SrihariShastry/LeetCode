@@ -18,7 +18,7 @@ public class NonOveralppingIntervals {
         int i = 1;
         // for every overlapping interval, increase count
         while (i < intervals.length) {
-            if (intervals[i][0] < res.peekLast()[1]) {
+            if (!res.isEmpty() && intervals[i][0] < res.peekLast()[1]) {
                 if (intervals[i][1] < res.peekLast()[1]) {
                     res.removeLast();
                     res.offerLast(intervals[i]);

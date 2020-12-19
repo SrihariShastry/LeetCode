@@ -12,7 +12,7 @@ public class JumpProblem {
         }
     }
     class Solution2{
-        /*
+        /**
         * This solution is based on the intuition that we need to avoid 0's in the array.
         * If, however, we do encounter a 0, we need to make sure that there exists an integer in the array
         * that can jump over this 0 in order to reach the end of the array
