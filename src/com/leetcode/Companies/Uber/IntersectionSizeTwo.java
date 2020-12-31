@@ -1,6 +1,7 @@
 package com.leetcode.Companies.Uber;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class IntersectionSizeTwo {
 
@@ -23,7 +24,7 @@ public class IntersectionSizeTwo {
      * @return Minimum size of the set
      */
     public int intersectionSizeTwo(int[][] intervals) {
-        Arrays.sort(intervals, (i1, i2) -> i1[1] - i2[1]);
+        Arrays.sort(intervals, Comparator.comparingInt(i -> i[1]));
         int max1 = -1;
         int max2 = -1;
         int count = 0;
