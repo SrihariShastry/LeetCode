@@ -9,17 +9,17 @@ public class minDistance {
      * We try to change either String1 to String2 or vice versa.
      * We define a matrix which holds the 2 words along its two axis
      * <p>
-     * if 2 chars are not same then we add 1 to the min value(left,dow, left_down) values.
-     * if 2 chars are same then we add 1 to the min value(left,dow, left_down-1) values.
+     * if 2 chars are not same then we add 1 to the min value(left, down, left_down) values.
+     * if 2 chars are same then we add 1 to the min value(left, down, left_down-1) values.
      * <p>
      * finally, the value at word1.length,word2.length of the matrix will give us the minimum
      * changes needed to change one word to another.
      *
-     * @param s
-     * @param t
-     * @return
+     * @param s Source String
+     * @param t Target String
+     * @return return the minimum changes needed to make the source string become the target String
      */
-    public int minDistance(String s, String t) {
+    public static int minDistance(String s, String t) {
         int n = s.length();
         int m = t.length();
 
@@ -48,4 +48,12 @@ public class minDistance {
         }
         return dp[n][m];
     }
+
+    public static void main(String[] args) {
+        String source = "abc";
+        String dest = "abcab";
+
+        System.out.println(minDistance(source, dest));
+    }
+
 }

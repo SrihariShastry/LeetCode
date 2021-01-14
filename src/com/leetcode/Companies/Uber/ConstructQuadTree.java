@@ -40,6 +40,9 @@ public class ConstructQuadTree {
         }
     }
 
+    /**
+     *
+     */
     class Solution {
 
         Node root = null;

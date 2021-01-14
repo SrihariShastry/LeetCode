@@ -7,6 +7,7 @@ public class CandyCrush {
         int m = board[0].length;
         boolean todo = false;
 
+        //First we identify all the values which are next to each other in a row.
         for (int i = 0; i < n; i++) {
             for (int j = 0; j + 2 < m; j++) {
                 int v = Math.abs(board[i][j]);
@@ -16,7 +17,7 @@ public class CandyCrush {
                 }
             }
         }
-
+        //Secondly we identify all the values which are next to each other vertically (column)
         for (int i = 0; i + 2 < n; i++) {
             for (int j = 0; j < m; j++) {
                 int v = Math.abs(board[i][j]);
@@ -26,7 +27,9 @@ public class CandyCrush {
                 }
             }
         }
-
+        /*
+            This part is similar to move zeros to the end problem.
+         */
         for (int c = 0; c < m; c++) {
             int wr = n - 1;
             for (int r = n - 1; r >= 0; r--) {

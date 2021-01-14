@@ -3,7 +3,16 @@ package com.leetcode.Companies.Qualcomm;
 import com.leetcode.top75.LinkedLists.ListNode;
 
 public class IntersectionOfLinkedList {
-
+    /**
+     * The idea behind this approach is that we have to have equal lengths before comparing the ListNodes
+     * so first we get the length of the two nodes and skip a few nodes from the longer node.
+     * <p>
+     * then we start checking if l1 == l2 until l1 and l2 are not null
+     *
+     * @param l1 ListNode 1
+     * @param l2 ListNode 2
+     * @return return the intersection point
+     */
     public ListNode getIntersectionNode(ListNode l1, ListNode l2) {
 
         //find the length of the two lists;

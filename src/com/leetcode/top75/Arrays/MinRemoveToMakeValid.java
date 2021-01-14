@@ -7,8 +7,8 @@ import java.util.Stack;
 public class MinRemoveToMakeValid {
     class Solution1 {
         public String minRemoveToMakeValid(String s) {
-            Stack<Integer> stack= new Stack<>();
-            Set<Integer> rem = new HashSet();
+            Stack<Integer> stack = new Stack<>();
+            Set<Integer> rem = new HashSet<>();
 
             // char[] charArr= s.toCharArray();
             for(int i=0;i<s.length();i++){

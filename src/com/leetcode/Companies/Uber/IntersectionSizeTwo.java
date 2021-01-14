@@ -6,7 +6,7 @@ import java.util.Comparator;
 public class IntersectionSizeTwo {
 
     /**
-     * this problem requires us to first sort the intervals based on start value
+     * this problem requires us to first sort the intervals based on end value
      * max1 and max2 are the maximum and second maximum values
      * we parse the intervals one by one and update max1 and max2 accordingly
      * <p>

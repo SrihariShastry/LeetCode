@@ -32,11 +32,11 @@ public class UniqueEmails {
                 }
                 if(splChar)continue;
 
-                if(email.charAt(i)!='.'&&email.charAt(i)!='+') {
+                if (email.charAt(i) != '.' && email.charAt(i) != '+') {
                     sb.append(email.charAt(i));
                 }
-                if(email.charAt(i)=='+')
-                    splChar=true;
+                if (email.charAt(i) == '+')
+                    splChar = true;
 
             }
             res.add(sb.toString());

@@ -1,6 +1,7 @@
 package com.leetcode.Companies.Uber;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class MinimumCostCities {
     public int n;
@@ -41,7 +42,7 @@ public class MinimumCostCities {
          * Time complexity for sorting: O(E*log(E))
          */
         //Sorting according to the cost
-        Arrays.sort(connections, (a, b) -> a[2] - b[2]);
+        Arrays.sort(connections, Comparator.comparingInt(a -> a[2]));
         parent = new int[N + 1];
         /**
          * Time complexity of the for loop below: O(N)

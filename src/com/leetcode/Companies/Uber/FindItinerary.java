@@ -7,7 +7,7 @@ public class FindItinerary {
     /**
      *
      * Time Complexity: Average Case O(|E|+|E| log(|E|/|V|); worst Case: |N|log|N| where N is |E|/2;
-     * Explanation: Teh DFS function traverses evert edge only once and hence the time complexity of
+     * Explanation: The DFS function traverses every edge only once and hence the time complexity of
      * graph traversal is |E|.
      * However, Complexity of sorting adjacency list of every vertex is going to be a bit tricky
      * The worst case(Star-like graph) is when there are M Vertices and E edges,

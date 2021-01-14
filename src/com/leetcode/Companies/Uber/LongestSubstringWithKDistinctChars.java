@@ -18,7 +18,7 @@ public class LongestSubstringWithKDistinctChars {
      *
      * @param s String
      * @param k Max Number of Distinct Characters the SubString can have
-     * @return
+     * @return max length of the substring with k distinct characters
      */
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
         if (s.length() * k == 0) return 0;

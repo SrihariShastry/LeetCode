@@ -3,6 +3,13 @@ package com.leetcode.Companies.GooglePrep;
 import java.util.ArrayList;
 
 public class SumNumbers {
+    /**
+     * First, we collect all the numbers from the string on to a stack.
+     * then we pop the stack and add all the numbers to the sum.
+     *
+     * @param str Input String
+     * @return Sum of numbers in the string
+     */
     public static int sumNumbers(String str) {
         ArrayList<Integer> res = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
