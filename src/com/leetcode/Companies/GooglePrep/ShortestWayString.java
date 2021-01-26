@@ -3,7 +3,7 @@ package com.leetcode.Companies.GooglePrep;
 public class ShortestWayString {
     public Integer shortestWay(String source, String target) {
         int i = 0;
-        int j = 0;
+        int j;
         int count = 0;
 
         while (i < target.length()) {
