@@ -22,7 +22,7 @@ public class EvaluateDivision {
             adj.get(start).put(end, value);
             adj.get(end).put(start, 1 / value);
         }
-
+        i = 0;
         for (List<String> query : queries) {
             Set<String> visited = new HashSet<>();
             if (!adj.containsKey(query.get(0)) || !adj.containsKey(query.get(1)))
