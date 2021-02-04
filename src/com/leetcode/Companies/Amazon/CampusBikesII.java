@@ -1,4 +1,4 @@
-package com.leetcode.Companies.GooglePrep;
+package com.leetcode.Companies.Amazon;
 
 public class CampusBikesII {
     public int assignBikes(int[][] workers, int[][] bikes) {
