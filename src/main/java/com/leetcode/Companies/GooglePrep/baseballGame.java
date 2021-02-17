@@ -7,15 +7,21 @@ public class baseballGame {
         Stack<Integer> scores = new Stack<>();
         for (String op : ops) {
             switch (op) {
-                case "C" -> scores.pop();
-                case "D" -> scores.push(2 * scores.peek());
-                case "+" -> {
+                case "C":
+                    scores.pop();
+                    break;
+                case "D":
+                    scores.push(2 * scores.peek());
+                    break;
+                case "+":
                     int prev1 = scores.pop();
                     int prev2 = scores.peek();
                     scores.push(prev1);
                     scores.push(prev1 + prev2);
-                }
-                default -> scores.push(Integer.parseInt(op));
+                    break;
+                default:
+                    scores.push(Integer.parseInt(op));
+                    break;
             }
         }
         int sum = 0;

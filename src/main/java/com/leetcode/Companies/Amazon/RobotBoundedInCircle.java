@@ -13,16 +13,28 @@ public class RobotBoundedInCircle {
         int x = 0, y = 0; // initial position
         for (char c : instructions.toCharArray()) {
             switch (c) {
-                case 'G' -> {
+                case 'G':
                     switch (curDir % 4) {
-                        case 0 -> x -= 1;
-                        case 1 -> y += 1;
-                        case 2 -> x += 1;
-                        case 3 -> y -= 1;
+                        case 0:
+                            x -= 1;
+                            break;
+                        case 1:
+                            y += 1;
+                            break;
+                        case 2:
+                            x += 1;
+                            break;
+                        case 3:
+                            y -= 1;
+                            break;
                     }
-                }
-                case 'L' -> curDir += 3;
-                case 'R' -> curDir += 1;
+
+                case 'L':
+                    curDir += 3;
+                    break;
+                case 'R':
+                    curDir += 1;
+                    break;
             }
         }
 
