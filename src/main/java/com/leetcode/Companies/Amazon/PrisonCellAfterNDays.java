@@ -18,7 +18,7 @@ public class PrisonCellAfterNDays {
      *
      * @param cells Initial cell values
      * @param N     Number of days
-     * @return the cell condition after N days
+     * @return The cell condition after N days
      */
     public int[] prisonAfterNDays(int[] cells, int N) {
 
