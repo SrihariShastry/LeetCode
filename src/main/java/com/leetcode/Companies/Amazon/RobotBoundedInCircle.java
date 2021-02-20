@@ -41,7 +41,7 @@ public class RobotBoundedInCircle {
         /*
          * Basically stating that if we have returned to original position or
          * if we have changed direction at any point during our traversal,
-         * we are bound to come back to our original position(run the directions on loop
+         * we are bound to come back to our original position(run the directions on loop)
          */
         return (x == 0 && y == 0) || (curDir % 4) != 0;
     }

@@ -34,6 +34,7 @@ public class MinDifficultyOfJobSchedule {
         for (int schedule = len; schedule < n; schedule++) {
             curMax = Math.max(curMax, jobs[schedule]);
 
+            //get the schedule max for the rest of the days
             int temp = dfs(d - 1, schedule + 1, jobs, memo);
 
             if (temp != Integer.MAX_VALUE) {

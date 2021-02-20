@@ -8,14 +8,6 @@ import java.util.HashSet;
 
 public class SnakeGame {
 
-    /**
-     * Initialize your data structure here.
-     *
-     * @param width - screen width
-     * @param height - screen height
-     * @param food - A list of food positions
-     * E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].
-     */
     Deque<Pair<Integer, Integer>> snake;
     HashSet<Pair<Integer, Integer>> snakePos;
     int height;
@@ -23,6 +15,14 @@ public class SnakeGame {
     int foodPos;
     int[][] food;
 
+    /**
+     * Initialize your data structure here.
+     *
+     * @param width  - screen width
+     * @param height - screen height
+     * @param food   - A list of food positions
+     *               E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].
+     */
     public SnakeGame(int width, int height, int[][] food) {
         this.height = height;
         this.width = width;
